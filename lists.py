@@ -1,12 +1,14 @@
 names = ['Nathan', 'Guilherme', 'Roger', 'Rodrigo', 'Renan', 'Roberta']
 print(names[0:6])
 
-#Maneira mais fácil do exercicio do livro seria usando o ´'for' para criar um loop
+#Maneira mais fácil do exercicio do livro seria usando o 'for' para
+#  criar um loop
 
 for name in names:
     print(f'{name} disse "Oi"')
 
-#O jeito que daria certo sem ser com o loop seria criar uma variavel para cada nome na lista:
+#O jeito que daria certo sem ser com o loop seria criar uma variavel
+# para cada nome na lista:
 
 mensagem = f'{names[0]} disse "Oi"'
 mensagem1 = f'{names[1]} disse "Oi"'
