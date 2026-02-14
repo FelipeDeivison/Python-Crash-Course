@@ -1,10 +1,11 @@
 pessoa = {
-    'first_name': 'Felipe',
-    'last_name': 'Angelo',
+    'first name': 'Felipe',
+    'last name': 'Angelo',
     'age': '23',
     'city': 'Bela Cruz',
 }
-print(pessoa)
+for key, value in pessoa.items():
+    print(f'\n{key.title()}: {value}')
 
 favorites_numbers = {
     'natiara': '20',
@@ -13,7 +14,8 @@ favorites_numbers = {
     'roberta': '18',
     'francisca': '28',
 }
-print(favorites_numbers)
+for pessoa, numero in favorites_numbers.items():
+    print(f'\nO número favorito de {pessoa.title()} é {numero}')
 
 glossario = {
     'variável': 'É um nome que você cria para guardar algum valor na memória'
@@ -24,7 +26,12 @@ glossario = {
     'loop': 'É uma estrutura que repete um bloco de código várias vezes.',
     'repositorio': 'É um local onde você guarda e organiza seu código,'
     ' podendo salvar versões e compartilhar com outras pessoas.',
+    'Função': 'É um bloco de código reutilizável que executa uma tarefa.',
+    'Lista' : 'É uma coleção ordenada de elementos que pode mudar.',
+    'Dicionário': 'É uma coleção de pares chave-valor.',
+    'Loop': 'É uma estrutura que repete uma ação enquanto uma condição for'
+    ' verdadeira.'
 }
 
 for chave, valor in glossario.items():
-    print(f'{chave.title()}: {valor}\n')
+    print(f'\n{chave.title()}: {valor}')
