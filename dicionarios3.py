@@ -27,3 +27,33 @@ for pessoas in people:
         f'\nSobrenome: {pessoas['last name']}'
         f'\nIdade: {pessoas['age']}' f'\tCidade: {pessoas['city']}'
         )
+    
+print('\n\tLista de Pets e seus donos\n')
+    
+cachorro = {
+    'Pet:': 'Cachorro',
+    'Raça:': 'Golden Retriever',
+    'Dono:': 'Felipe Angelo',
+}
+
+gato = {
+    'Pet:': 'Gato',
+    'Raça:': 'Siamês',
+    'Dono:': 'Natiara Angelo',
+}
+
+passaro = {
+    'Pet:': 'Passáro',
+    'Raça:': 'Periquito-australiano',
+    'Dono:': 'Francisca Pereira',
+}
+
+pets = [cachorro, gato, passaro,]
+
+for pet in pets:
+    print(
+        f'Dono(a): {pet['Dono:']}\n'
+        f'Pet: {pet['Pet:']}' f'\tRaça: {pet['Raça:']}\n'
+    )
+
+favorite_places
