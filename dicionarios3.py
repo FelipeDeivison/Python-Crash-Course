@@ -56,4 +56,18 @@ for pet in pets:
         f'Pet: {pet['Pet:']}' f'\tRaça: {pet['Raça:']}\n'
     )
 
-favorite_places
+favorite_places = {
+    'Viagem1': 'Japão',
+    'Viagem2': 'Colombia',
+    'Viagem3': 'New York',
+}
+
+print()
+
+for lugar in favorite_places.values():
+    if lugar == 'Japão':
+        print(f'Felipe quer viajar futuramente para o {lugar}!\n')
+    elif lugar == 'Colombia':
+        print(f'João e Felipe iram viajar para a {lugar}!\n')
+    else:
+        print(f'Felipe e seus amigos estão planejando viajar para {lugar}!\n')
