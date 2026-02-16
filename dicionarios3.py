@@ -71,3 +71,48 @@ for lugar in favorite_places.values():
         print(f'João e Felipe iram viajar para a {lugar}!\n')
     else:
         print(f'Felipe e seus amigos estão planejando viajar para {lugar}!\n')
+
+print()
+
+favorites_numbers = {
+    'natiara': [20, 38, 27],
+    'felipe': [8, 6, 26, 18],
+    'nathan': [16, 24, 32],
+    'roberta': [18],
+    'francisca': [21,35],
+    }
+
+for pessoa, numeros in favorites_numbers.items():
+    print(f'{pessoa}: {numeros}')
+
+print()
+
+cities = {
+    'São Paulo': {
+        'coutry': 'Brasil',
+        'population': '11,45 milhões',
+        'fact': 'É a cidade mais populosa do hemisfério sul e o maior centro'
+         ' financeiro da América Latina.',
+    },
+    
+    'Fortaleza': {
+        'coutry': 'Brasil',
+        'population': '2,43 milhões',
+        'fact': 'É uma das cidades mais ensolaradas do Brasil e tem uma das'
+         ' maiores densidades populacionais do país.',
+    },
+    
+    'Rio de Janeiro': {
+        'coutry': 'Brasil',
+        'population': '6,73 milhões',
+        'fact': 'É famosa mundialmente pelo Rock in Rio e pelo Cristo Redentor,'
+        ' uma das sete maravilhas do mundo moderno.',
+    },
+    }
+
+for cidade, infos in cities.items():
+    print(
+        f'{cidade}\n\nPaís: {infos['coutry']}' 
+        f'\tPopulação: {infos['population']}\n'
+        f'\nInformações: {infos['fact']}\n'
+        )
