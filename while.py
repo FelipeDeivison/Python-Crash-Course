@@ -26,4 +26,12 @@ while True:
         print('O ingresso custa U$15')
 
 
-    
+contador = 0
+while True:
+    if contador <= 10:
+        print(contador)
+        contador += 1
+    else:
+        break
+
+
