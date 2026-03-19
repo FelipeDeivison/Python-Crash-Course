@@ -42,3 +42,19 @@ user.increment_login_attempts()
 user.reset_login_attempts()
 
 print(user.login_attempts)
+
+class Admin(User):
+    def __init__(self, first_name, last_name, age, location, login_attempts=0):
+        super().__init__(first_name, last_name, age, location, login_attempts)
+        self.privileges = [
+            'can add post',
+            'can delete post',
+            'can ban user',
+        ]
+    
+    def show_privileges(self):
+        for number, privelege in enumerate(self.privileges, start=1):
+            print(number, '-' ,privelege.title())
+
+admin = Admin('Felipe', 'Angelo', 23, 'São Paulo',)
+admin.show_privileges()
