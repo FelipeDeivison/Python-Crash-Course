@@ -29,3 +29,17 @@ restaurant.number_served()
 
 restaurant.increment_number_servet(12)
 
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type, numbr_served=0):
+        super().__init__(restaurant_name, cuisine_type, numbr_served)
+        self.flovors = ['Leite', 'chocolate', 'flocos',]
+    def sabores_sorvetes(self,):
+        print(
+            f'Sabores de Sorvetes disponiveis:\n'
+            f'{self.flovors}'
+            )
+
+
+sorveteria = IceCreamStand('Doce Gelado', 'Sorveteria')
+
+sorveteria.sabores_sorvetes()
