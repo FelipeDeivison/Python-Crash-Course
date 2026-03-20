@@ -58,3 +58,11 @@ class Admin(User):
 
 admin = Admin('Felipe', 'Angelo', 23, 'São Paulo',)
 admin.show_privileges()
+
+class Privileges:
+    def __init__(self, privilegios= None):
+        if privilegios in None:
+            self.privilegios = []
+        else:
+            self.privilegios = privilegios
+        self.priveleges = Admin()
