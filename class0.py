@@ -18,16 +18,6 @@ class Restaurant:
         self.numbr_served = numbr_served
         print(f'Número de clientes atendidos hoje: {self.numbr_served}')
 
-restaurant = Restaurant('Japa do Fê', 'Japônesa')
-
-restaurant.open_restaurant()
-
-restaurant.describe_restaurant()
-
-restaurant.numbr_served = 10
-restaurant.number_served()
-
-restaurant.increment_number_servet(12)
 
 class IceCreamStand(Restaurant):
     def __init__(self, restaurant_name, cuisine_type, numbr_served=0):
@@ -39,7 +29,21 @@ class IceCreamStand(Restaurant):
             f'{self.flovors}'
             )
 
+if __name__ == "__main__":
 
-sorveteria = IceCreamStand('Doce Gelado', 'Sorveteria')
+    restaurant = Restaurant('Japa do Fê', 'Japônesa')
 
-sorveteria.sabores_sorvetes()
+    restaurant.open_restaurant()
+
+    restaurant.describe_restaurant()
+
+    restaurant.numbr_served = 10
+    restaurant.number_served()
+
+    restaurant.increment_number_servet(12)
+
+    print()
+
+    sorveteria = IceCreamStand('Doce Gelado', 'Sorveteria')
+
+    sorveteria.sabores_sorvetes()
