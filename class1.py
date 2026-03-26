@@ -26,22 +26,6 @@ class User:
         print(self.login_attempts)
         
 
-    
-user = User('Felipe', 'Angelo', 23, 'São Paulo', login_attempts=25)
-
-user.describe_user()
-user.greet_usr()
-
-user2 = User('Natiara', 'Angelo', 32, 'Bela Cruz')
-user2.describe_user()
-user2.greet_usr()
-    
-
-user.increment_login_attempts()
-
-user.reset_login_attempts()
-
-print(user.login_attempts)
 
 class Admin(User):
     def __init__(self, first_name, last_name, age, location, login_attempts=0):
@@ -56,8 +40,6 @@ class Admin(User):
         for number, privelege in enumerate(self.privileges, start=1):
             print(number, '-' ,privelege.title())
 
-admin = Admin('Felipe', 'Angelo', 23, 'São Paulo',)
-admin.show_privileges()
 
 class Privileges:
     def __init__(self, privilegios= None):
@@ -66,3 +48,28 @@ class Privileges:
         else:
             self.privilegios = privilegios
         self.priveleges = Admin()
+
+
+
+
+if __name__ == "__main__":
+    user = User('Felipe', 'Angelo', 23, 'São Paulo', login_attempts=25)
+
+    user.describe_user()
+    user.greet_usr()
+
+    user2 = User('Natiara', 'Angelo', 32, 'Bela Cruz')
+    user2.describe_user()
+    user2.greet_usr()
+        
+
+    user.increment_login_attempts()
+
+    user.reset_login_attempts()
+
+    print(user.login_attempts)
+
+    print()
+
+    admin = Admin('Felipe', 'Angelo', 23, 'São Paulo',)
+    admin.show_privileges()
